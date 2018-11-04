@@ -1,18 +1,27 @@
 #include "stdafx.h"
 #include "Table.h"
 
-std::string hello = "hello!";
-
 Table::Table()
 {
+	Width = Table::_get_console_width();
+	Height = Table::_get_console_height();
 }
-
 
 Table::~Table()
 {
 }
 
-std::string Table::get_hello()
+
+int Table::_get_console_width()
 {
-	return hello;
+	GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &_csbi);
+	int width = _csbi.srWindow.Right - _csbi.srWindow.Left + 1;
+	return width;
+}
+
+int Table::_get_console_height()
+{
+	GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &_csbi);
+	int height = _csbi.srWindow.Bottom - _csbi.srWindow.Top + 1;
+	return height;
 }
