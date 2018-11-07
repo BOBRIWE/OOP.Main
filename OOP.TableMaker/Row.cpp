@@ -5,15 +5,19 @@
 Row::Row(int width)
 {
 	_width = width;
+	_available_width = width;
 }
 
 
-Row::~Row()
+Row* Row::add_cell(Cell *cell)
 {
-}
+	if (_available_width < cell->get_width()) {
+		cell->reset_width(_available_width);
+		cell->reset_msg(cell->get_msg().substr(0, _available_width));
+	}
 
+	_available_width = _available_width > cell->get_width() ? _available_width - cell->get_width() : 0;
 
-void Row::add_cell(Cell cell)
-{
 	Cells.push_back(cell);
+	return this;
 }

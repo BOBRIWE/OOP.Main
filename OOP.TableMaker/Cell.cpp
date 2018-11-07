@@ -2,21 +2,17 @@
 #include "Cell.h"
 
 
-Cell::Cell(std::string msg, int width)
+Cell::Cell(std::string msg, int width, std::string align)
 {
 	_msg = msg;
 	_width = width;
+	_align = align;
 }
 
 
 Cell::Cell(std::string msg)
 {
 	Cell(msg, msg.length());
-}
-
-
-Cell::~Cell()
-{
 }
 
 
@@ -29,4 +25,19 @@ void Cell::reset_width(int width)
 void Cell::reset_msg(std::string msg)
 {
 	_msg = msg;
+}
+
+int Cell::get_width()
+{
+	return _width;
+}
+
+std::string Cell::get_align()
+{
+	return _align;
+}
+
+std::string Cell::get_msg()
+{
+	return _msg;
 }

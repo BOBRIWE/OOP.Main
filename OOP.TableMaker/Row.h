@@ -6,12 +6,13 @@ class Row
 {
 public:
 	Row(int width);
-	~Row();
 
-	std::vector<Cell> Cells;
-	void add_cell(Cell cell);
+	std::vector<Cell*> Cells;
+	Row* add_cell(Cell *cell);
 
 private:
 	int _width;
+	int _available_width;
+
 };
 

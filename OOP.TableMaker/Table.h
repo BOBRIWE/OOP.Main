@@ -10,7 +10,9 @@ public:
 	~Table();
 
 	int Width, Height;
-	Row add_row();
+	Row* add_row(Row *row);
+	std::vector<Row*> Rows;
+	void print();
 
 private:
 	CONSOLE_SCREEN_BUFFER_INFO _csbi;
