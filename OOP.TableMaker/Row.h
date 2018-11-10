@@ -8,7 +8,7 @@ public:
 	Row(int width);
 
 	std::vector<Cell*> Cells;
-	Row* add_cell(Cell *cell);
+	Row* add_cell(Cell* cell);
 
 private:
 	int _width;

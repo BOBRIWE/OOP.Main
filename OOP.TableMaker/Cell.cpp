@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "Cell.h"
+#include <iostream>
 
 
 Cell::Cell(std::string msg, int width, std::string align)
@@ -10,9 +11,14 @@ Cell::Cell(std::string msg, int width, std::string align)
 }
 
 
-Cell::Cell(std::string msg)
+Cell::Cell(std::string msg) :Cell(msg, msg.length())
 {
-	Cell(msg, msg.length());
+}
+
+
+Cell::~Cell()
+{
+	std::cout << _msg;
 }
 
 

@@ -10,7 +10,7 @@ public:
 	~Table();
 
 	int Width, Height;
-	Row* add_row(Row *row);
+	Row* add_row(Row* row);
 	std::vector<Row*> Rows;
 	void print();
 

@@ -29,7 +29,7 @@ int Table::_get_console_height()
 	return height;
 }
 
-Row* Table::add_row(Row *row)
+Row* Table::add_row(Row* row)
 {
 	Rows.push_back(row);
 	return row;
