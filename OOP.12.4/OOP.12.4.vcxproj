@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{D183A325-30D0-4457-B35A-DC421E512F78}</ProjectGuid>
+    <ProjectGuid>{9D4FC2E5-C58A-4D7A-8D8A-A1F0ABF7FCA9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>OOP123</RootNamespace>
+    <RootNamespace>OOP124</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -150,13 +150,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="OOP.12.3.h" />
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="OOP.12.4.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="OOP.12.3.cpp" />
+    <ClCompile Include="OOP.12.4.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -165,10 +166,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="OOP.12.3.rc" />
+    <ResourceCompile Include="OOP.12.4.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="OOP.12.3.ico" />
+    <Image Include="OOP.12.4.ico" />
     <Image Include="small.ico" />
   </ItemGroup>
   <ItemGroup>

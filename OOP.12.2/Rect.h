@@ -35,13 +35,6 @@ public:
 		reset_base_point(base_point);
 	}
 
-	void reset_color(COLORREF c)
-	{
-		color = c;
-		pen = CreatePen(PS_SOLID, 7, color);
-		brush = CreateSolidBrush(color);
-	}
-
 	void reset_base_point(POINT pt)
 	{
 		base_point = pt;

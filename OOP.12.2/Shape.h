@@ -10,8 +10,7 @@ public:
 		Shape::color = color;
 		Shape::base_point = base_point;
 
-		pen = CreatePen(PS_SOLID, 7, color);
-		brush = CreateSolidBrush(color);
+		reset_color(Shape::color);
 	}
 
 	void set_width(int w) {
@@ -30,4 +29,12 @@ protected:
 	HBRUSH brush;
 	COLORREF color;
 	POINT base_point;
+
+public:
+	void reset_color(COLORREF c)
+	{
+		color = c;
+		pen = CreatePen(PS_SOLID, 1, color);
+		brush = CreateSolidBrush(color);
+	}
 };
