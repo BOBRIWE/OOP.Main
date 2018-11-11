@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP.PDFFiles", "OOP.PDFFile
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP.TableMaker", "OOP.TableMaker\OOP.TableMaker.vcxproj", "{8189B659-1ED2-4274-B012-D5BEDF354643}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP.12.2", "OOP.12.2\OOP.12.2.vcxproj", "{39A7B429-04AA-4B59-8BB2-BA5563E59BFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,12 +43,21 @@ Global
 		{8189B659-1ED2-4274-B012-D5BEDF354643}.Release|x64.Build.0 = Release|x64
 		{8189B659-1ED2-4274-B012-D5BEDF354643}.Release|x86.ActiveCfg = Release|Win32
 		{8189B659-1ED2-4274-B012-D5BEDF354643}.Release|x86.Build.0 = Release|Win32
+		{39A7B429-04AA-4B59-8BB2-BA5563E59BFA}.Debug|x64.ActiveCfg = Debug|x64
+		{39A7B429-04AA-4B59-8BB2-BA5563E59BFA}.Debug|x64.Build.0 = Debug|x64
+		{39A7B429-04AA-4B59-8BB2-BA5563E59BFA}.Debug|x86.ActiveCfg = Debug|Win32
+		{39A7B429-04AA-4B59-8BB2-BA5563E59BFA}.Debug|x86.Build.0 = Debug|Win32
+		{39A7B429-04AA-4B59-8BB2-BA5563E59BFA}.Release|x64.ActiveCfg = Release|x64
+		{39A7B429-04AA-4B59-8BB2-BA5563E59BFA}.Release|x64.Build.0 = Release|x64
+		{39A7B429-04AA-4B59-8BB2-BA5563E59BFA}.Release|x86.ActiveCfg = Release|Win32
+		{39A7B429-04AA-4B59-8BB2-BA5563E59BFA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{65F09241-D3A7-41CE-B228-8B204889E32C} = {1D831A4B-1A61-4428-A027-A279D76DEF1A}
+		{39A7B429-04AA-4B59-8BB2-BA5563E59BFA} = {1D831A4B-1A61-4428-A027-A279D76DEF1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA938F2D-131D-46C9-B33B-6F513E10E1E9}
